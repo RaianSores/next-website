@@ -1,0 +1,20 @@
+.servicesContainer {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.servicesContainer div {
+    margin-left: 1px;
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 10%;
+    border: 10px solid;
+}
+
+.servicesContainer strong {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--gold);
+    align-items: center;
+}

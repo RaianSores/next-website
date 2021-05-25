@@ -1,0 +1,69 @@
+.profileContainer {
+    position: absolute;
+    align-items: center;
+    align-content: space-between;
+    top: 20%;
+    left: 5%;
+}
+
+
+.profileContainer > img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+.profileContainer div {
+    position: absolute;
+    margin-bottom: 10rem;
+    margin-left: 0.01rem;
+    flex-direction: row;
+    top: 200px;
+    width: 300px;
+    height: 100px;
+}
+.profileContainer > span {
+    border-radius: 100%;
+    border: 4px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--white);
+    transform: translate(-50%, -50%);
+    animation: ring 2.5s infinite;
+}
+
+.profileContainer div strong {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--text-highlight);
+    flex-direction: row;
+    font-family: var(--font-primary); 
+}
+
+.profileContainer div p {
+    font-size: 2rem;
+    margin-top: 0.02rem;
+    flex-direction: row;
+    font-family: var(--font-secundary);
+    color: var(--red);
+}
+
+@keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 100px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}
+
+@keyframes ring {
+    0% {
+      width: 100px;
+      height: 100px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }

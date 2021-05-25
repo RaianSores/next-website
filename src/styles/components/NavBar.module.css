@@ -1,0 +1,45 @@
+.navbarContainer {  
+    background: #000;
+    height: 60px;
+    display: flex;
+    /*justify-content: space-between;*/
+    padding: 0.5rem calc((100vw - 1000px) - 2);
+    z-index: 10;
+
+    /* 3rd Nav */
+    justify-content: flex-start;
+}
+.menu img {
+    position: absolute;
+    left: 3rem;
+    top: 0.4rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;  
+    padding-left: 50rem;
+}
+
+.menuItem {
+    text-align: left;
+    margin-bottom: .2rem;
+    padding: 1rem;
+    margin-right: 10%;
+    font-size: 1.5rem;
+    font-family: var(--font-action);
+    color: var(--red);
+}
+
+.menuLink {
+    font-family: var(--font-action);
+    font-size: 1.5rem;
+    color: var(--red);
+    transition: color 0.5s;
+}
+
+.menuLink:hover{
+    color: #aa0505;
+}

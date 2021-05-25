@@ -1,0 +1,37 @@
+.slideshowContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;
+}
+
+.slideshowContainer div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideshowContainer header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.slideshowContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoom 25s;   
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

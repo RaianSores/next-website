@@ -1,0 +1,47 @@
+.welcomeContainer {
+    display: grid;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 28%;
+    right: 10%;
+    border-radius: 1rem;
+}
+
+.welcomeContainer div {
+    text-align: justify;
+    margin-left: 10px;
+    padding: 30px;
+    background: var(--background);
+    
+}
+
+.welcomeContainer strong {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--gray-line);
+    margin-left: 1rem;
+    font-family: Rajdhani;
+    opacity: 0;
+    animation: fodeInText 0s 1.1s both;
+}
+
+.welcomeContainer p {
+    font-size: 3rem;
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: var(--gold);
+    font-family: Rajdhani;
+    opacity: 0;
+    animation: fodeInText 0s 1.3s both;
+}
+
+@keyframes fodeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
